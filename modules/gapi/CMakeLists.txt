@@ -49,6 +49,7 @@ file(GLOB gapi_ext_hdrs
     "${CMAKE_CURRENT_LIST_DIR}/include/opencv2/${name}/ocl/*.hpp"
     "${CMAKE_CURRENT_LIST_DIR}/include/opencv2/${name}/own/*.hpp"
     "${CMAKE_CURRENT_LIST_DIR}/include/opencv2/${name}/render/*.hpp"
+    "${CMAKE_CURRENT_LIST_DIR}/include/opencv2/${name}/s11n/*.hpp"
     "${CMAKE_CURRENT_LIST_DIR}/include/opencv2/${name}/streaming/*.hpp"
     "${CMAKE_CURRENT_LIST_DIR}/include/opencv2/${name}/plaidml/*.hpp"
     "${CMAKE_CURRENT_LIST_DIR}/include/opencv2/${name}/util/*.hpp"
@@ -77,6 +78,8 @@ set(gapi_srcs
     src/api/render_ocv.cpp
     src/api/ginfer.cpp
     src/api/ft_render.cpp
+    src/api/media.cpp
+    src/api/rmat.cpp
 
     # Compiler part
     src/compiler/gmodel.cpp
